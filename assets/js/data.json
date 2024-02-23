@@ -1,0 +1,15 @@
+
+{
+    "intro":{
+        "title":{
+            "en":{
+                "h1":"Hi, we are Hernandez Agency, your partnerin providing services and more.",
+                "p": "where we provide a combination of construction, accounting, technology, and personalized attention services to support both individuals and the success of small businesses.."
+            },
+            "sp":{
+                "h1":"Hola, somos Agencia Hernandez, tu socio en brindar servicios y más.",
+                 "p":"donde brindamos una combinación de servicios de construcción, contabilidad, tecnología y atención personalizada para apoyar tanto a las personas como al éxito de las pequeñas empresas."
+            }
+        }
+    }
+}
