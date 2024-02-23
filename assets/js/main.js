@@ -50,13 +50,13 @@
 			var pElement = document.querySelector('p');
 			
 			if (langButton.innerText === 'Español / Ingles') {
-				langButton.innerText = 'English / Español';
-				h1Element.innerText = jsonData.intro.title.en.h1;
-				pElement.innerText = jsonData.intro.title.en.p;
-			} else {
-				langButton.innerText = 'Español / Ingles';
+                langButton.innerText = 'Español / Ingles';
 				h1Element.innerText = jsonData.intro.title.sp.h1;
 				pElement.innerText = jsonData.intro.title.sp.p;
+			} else {
+                langButton.innerText = 'English / Español';
+				h1Element.innerText = jsonData.intro.title.en.h1;
+				pElement.innerText = jsonData.intro.title.en.p;
 			}
 		});
 	}
