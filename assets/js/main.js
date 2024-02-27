@@ -47,8 +47,9 @@ function toggleLanguage() {
     console.log("toggleLanguage is called");
     fetchJSONData(function(jsonData) {
         var langButton = document.getElementById('languageButton').value; // Access value directly
-        var h1Element = document.querySelector('h1');
-        var pElement = document.querySelector('p');
+        var h1Element = document.querySelector('#titleHeader');
+        var pElement = document.querySelector('#textHeader');
+        var aElement = document.querySelector('#anchorHeader');
         
         if (langButton === 'Español / Ingles') { // Check value directly
             // Update button value
@@ -56,12 +57,14 @@ function toggleLanguage() {
             // Update content to English
             h1Element.innerText = jsonData.intro.title.en.h1;
             pElement.innerText = jsonData.intro.title.en.p;
+            aElement.innerText = jsonData.intro.title.en.a;
         } else {
             // Update button value
             document.getElementById('languageButton').value = 'Español / Ingles';
             // Update content to Spanish
             h1Element.innerText = jsonData.intro.title.sp.h1;
             pElement.innerText = jsonData.intro.title.sp.p;
+            aElement.innerText = jsonData.intro.title.sp.a;
         }
     });
 }
