@@ -42,33 +42,39 @@
     }
 
     // Function to toggle between English and Spanish text
-	function toggleLanguage() {
-		console.log("toggleLanguage is called");
-		fetchJSONData(function(jsonData) {
-			var langButton = document.getElementById('languageButton');
-			var h1Element = document.querySelector('h1');
-			var pElement = document.querySelector('p');
-			
-			if (langButton.innerText === 'Español / Ingles') {
-                langButton.innerText = 'Español / Ingles';
-				h1Element.innerText = jsonData.intro.title.sp.h1;
-				pElement.innerText = jsonData.intro.title.sp.p;
-			} else {
-                langButton.innerText = 'English / Español';
-				h1Element.innerText = jsonData.intro.title.en.h1;
-				pElement.innerText = jsonData.intro.title.en.p;
-			}
-		});
-	}
+	// Function to toggle between English and Spanish text
+function toggleLanguage() {
+    console.log("toggleLanguage is called");
+    fetchJSONData(function(jsonData) {
+        var langButton = document.getElementById('languageButton').value; // Access value directly
+        var h1Element = document.querySelector('h1');
+        var pElement = document.querySelector('p');
+        
+        if (langButton === 'Español / Ingles') { // Check value directly
+            // Update button value
+            document.getElementById('languageButton').value = 'English / Español';
+            // Update content to English
+            h1Element.innerText = jsonData.intro.title.en.h1;
+            pElement.innerText = jsonData.intro.title.en.p;
+        } else {
+            // Update button value
+            document.getElementById('languageButton').value = 'Español / Ingles';
+            // Update content to Spanish
+            h1Element.innerText = jsonData.intro.title.sp.h1;
+            pElement.innerText = jsonData.intro.title.sp.p;
+        }
+    });
+}
+
 	
 
     // Attach click event to language button
-    // $(document).ready(function () {
-	// 	// Adjuntar controlador de eventos al botón de cambio de idioma
-	// 	$('#languageButton').click(function () {
-	// 		toggleLanguage();
-	// 	});
-	// });
+    $(document).ready(function () {
+		// Adjuntar controlador de eventos al botón de cambio de idioma
+		$('#languageButton').click(function () {
+			toggleLanguage();
+		});
+	});
 	
 	// Resto de tu código sigue igual
 	
