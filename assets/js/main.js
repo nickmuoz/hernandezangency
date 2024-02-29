@@ -51,6 +51,10 @@ function toggleLanguage() {
         var aElement = document.querySelector('#anchorHeader');
         var textDescription = document.querySelector('#TextDescription');
         var parraftDescription = document.querySelector('#parraftDescription');
+        var carouselTitle1 = document.querySelector('#carouselTitle1');
+        var descriptionTitle1 = document.querySelector('#descriptionTitle1');
+        var carouselTitle2 = document.querySelector('#carouselTitle2');
+        var descriptionTitle2 = document.querySelector('#descriptionTitle2');
         
         if (langButton === 'Español / Ingles') { // Check value directly
             // Update button value
@@ -61,6 +65,11 @@ function toggleLanguage() {
             aElement.innerText = jsonData.intro.title.en.a;
             textDescription.innerText = jsonData.intro.description.en.h2;
             parraftDescription.innerText = jsonData.intro.description.en.p;
+            carouselTitle1.innerText = jsonData.intro.description.en.carouselTitle1;
+            carouselTitle1.innerText = jsonData.intro.description.en.carouselTitle1;
+            descriptionTitle1.innerText = jsonData.intro.description.en.descriptionTitle1;
+            carouselTitle2.innerText = jsonData.intro.description.en.carouselTitle2;
+            descriptionTitle2.innerText = jsonData.intro.description.en.descriptionTitle2;
         } else {
             // Update button value
             document.getElementById('languageButton').value = 'Español / Ingles';
@@ -70,6 +79,10 @@ function toggleLanguage() {
             aElement.innerText = jsonData.intro.title.sp.a;
             textDescription.innerText = jsonData.intro.description.sp.h2;
             parraftDescription.innerText = jsonData.intro.description.sp.p;
+            carouselTitle1.innerText = jsonData.intro.description.sp.carouselTitle1;
+            descriptionTitle1.innerText = jsonData.intro.description.sp.descriptionTitle1;
+            carouselTitle2.innerText = jsonData.intro.description.sp.carouselTitle2;
+            descriptionTitle2.innerText = jsonData.intro.description.sp.descriptionTitle2;
         }
     });
 }
