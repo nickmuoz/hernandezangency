@@ -55,6 +55,8 @@ function toggleLanguage() {
         var descriptionTitle1 = document.querySelector('#descriptionTitle1');
         var carouselTitle2 = document.querySelector('#carouselTitle2');
         var descriptionTitle2 = document.querySelector('#descriptionTitle2');
+        var carouselTitle3 = document.querySelector('#carouselTitle3');
+        var descriptionTitle3 = document.querySelector('#descriptionTitle3');
         
         if (langButton === 'Español / Ingles') { // Check value directly
             // Update button value
@@ -70,6 +72,8 @@ function toggleLanguage() {
             descriptionTitle1.innerText = jsonData.intro.description.en.descriptionTitle1;
             carouselTitle2.innerText = jsonData.intro.description.en.carouselTitle2;
             descriptionTitle2.innerText = jsonData.intro.description.en.descriptionTitle2;
+            carouselTitle3.innerText = jsonData.intro.description.en.carouselTitle3;
+            descriptionTitle3.innerText = jsonData.intro.description.en.descriptionTitle3;
         } else {
             // Update button value
             document.getElementById('languageButton').value = 'Español / Ingles';
@@ -82,7 +86,9 @@ function toggleLanguage() {
             carouselTitle1.innerText = jsonData.intro.description.sp.carouselTitle1;
             descriptionTitle1.innerText = jsonData.intro.description.sp.descriptionTitle1;
             carouselTitle2.innerText = jsonData.intro.description.sp.carouselTitle2;
-            descriptionTitle2.innerText = jsonData.intro.description.sp.descriptionTitle2;
+            descriptionTitle2.innerText = jsonData.intro.description.sp.descriptionTitle3;
+            carouselTitle3.innerText = jsonData.intro.description.sp.carouselTitle3;
+            descriptionTitle3.innerText = jsonData.intro.description.sp.descriptionTitle3;
         }
     });
 }

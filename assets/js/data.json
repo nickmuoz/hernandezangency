@@ -20,7 +20,9 @@
                 "carouselTitle1":"Renovation",
                 "descriptionTitle1":"encompassing Painting, Drywall Finishing, Demolition, and Cleaning services",
                 "carouselTitle2":"Accounting Services",
-                "descriptionTitle2":"Bussiness Registration, Sales Taxes, Notary Public, License, ITIN Numbers, Online Applications"
+                "descriptionTitle2":"Bussiness Registration, Sales Taxes, Notary Public, License, ITIN Numbers, Online Applications",
+                "carouselTitle3":"Longevity Center",
+                "descriptionTitle3":"center for integrative internal medicine and longevity"
             },
             "sp":{
                 "h2":"La Agencia Hernández lidera la tarea de adoptar iniciativas proactivas y comprender el panorama global en evolución.",
@@ -29,6 +31,9 @@
                 "descriptionTitle1":"que abarca servicios de pintura, acabado de paneles de yeso, demolición y limpieza",
                 "carouselTitle2":"Servicios Contables",
                 "descriptionTitle2":"Registro de empresas, impuestos sobre las ventas, notario público, licencia, números ITIN, solicitudes en línea"
+                ,
+                "carouselTitle3":"Centro de Longevidad",
+                "descriptionTitle3":"centro de medicina interna integrativa y longevidad"
             }
         },
         "services":{
