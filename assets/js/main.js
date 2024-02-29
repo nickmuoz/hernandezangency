@@ -12,7 +12,6 @@
         xxsmall: [null, '320px']
     });
 
-    
     // Play initial animations on page load.
     $window.on('load', function () {
         window.setTimeout(function () {
@@ -25,42 +24,26 @@
 
     // Scrolly.
     $('.scrolly').scrolly();
-
-
-    // Function to toggle between English and Spanish text
-    function toggleLanguage() {
-        // Cargar el JSON usando Fetch
-            var langButton = document.getElementById('languageButton').value; // Access value directly
-            
-             if (langButton === 'Español / Ingles') { // Check value directly
-                 // Update button value
-                 document.getElementById('languageButton').value = 'English / Español';
-                 // Update content to English
-                 translate("sp");
-                 
-             } else {
-                 // Update button value
-                 document.getElementById('languageButton').value = 'Español / Ingles';
-                 // Update content to Spanish
-                 translate("en");
-                 
-             }
-    }
-
-
-
-    // Attach click event to language button
-    $(document).ready(function () {
-        // Adjuntar controlador de eventos al botón de cambio de idioma
-        $('#languageButton').click(function () {
-            toggleLanguage();
-        });
-    });
-
-    // Resto de tu código sigue igual
-
-
 })(jQuery);
+
+function toggleLanguage() {
+    // Cargar el JSON usando Fetch
+    var langButton = document.getElementById('languageButton').value; // Access value directly
+
+    if (langButton === 'Español / Ingles') { // Check value directly
+        // Update button value
+        document.getElementById('languageButton').value = 'English / Español';
+        // Update content to English
+        translate("sp");
+
+    } else {
+        // Update button value
+        document.getElementById('languageButton').value = 'Español / Ingles';
+        // Update content to Spanish
+        translate("en");
+
+    }
+}
 
 function translate(language) {
     fetch('assets/js/data.json')
@@ -77,7 +60,7 @@ function translate(language) {
                                     if (langData.hasOwnProperty(key)) {
                                         let element = document.querySelector(key);
                                         if (element) {
-                                            element.innerText = langData[key];
+                                            element.textContent = langData[key];
                                         }
                                     }
                                 }

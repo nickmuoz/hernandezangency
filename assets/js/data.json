@@ -1,27 +1,38 @@
+
 {
     "intro":{
-      "title":{
-        "en":{
-          "#titleHeader":"Hi, we are Hernandez Agency, your partnerin providing services and more.",
-          "p":"where we provide a combination of construction, accounting, technology, and personalized attention services to support both individuals and the success of small businesses.",
-          "a":"Discover"
+        "title":{
+            "en":{
+                "h1":"Hi, we are Hernandez Agency, your partnerin providing services and more.",
+                "#textHeader": "where we provide a combination of construction, accounting, technology, and personalized attention services to support both individuals and the success of small businesses..",
+                "a":"Discover"
+            },
+            "sp":{
+                "h1":"Hola, somos Agencia Hernandez, tu socio en brindar servicios y más.",
+                 "#textHeader":"donde brindamos una combinación de servicios de construcción, contabilidad, tecnología y atención personalizada para apoyar tanto a las personas como al éxito de las pequeñas empresas.",
+                 "a":"Descubrir"
+            }
         },
-        "sp":{
-          "h1":"Hola, somos Agencia Hernandez, tu socio en brindar servicios y más.",
-          "p":"donde brindamos una combinación de servicios de construcción, contabilidad, tecnología y atención personalizada para apoyar tanto a las personas como al éxito de las pequeñas empresas.",
-          "a":"Descubrir"
-        }
-      },
-      "description":{
-        "en":{
-          "h2":"Hernandez Agency leads the charge in embracing the proactive initiatives , understanding the evolving global landscape",
-          "p":"aaaa Our team, comprised of driven individuals, unites to deliver top-tier construction, accounting,and tech services, uniquely tailored to each client's needs. In a brief timeframe, we've garnered client trust, propelling us towards unparalleled excellence."
+        "description":{
+            "en":{
+                "h2":"Hernandez Agency leads the charge in embracing the proactive initiatives , understanding the evolving global landscape",
+                "#parraftDescription":"Our team, comprised of driven individuals, unites to deliver top-tier construction, accounting,and tech services, uniquely tailored to each client's needs. In a brief timeframe, we've garnered client trust, propelling us towards unparalleled excellence.",
+                "#carouselTitle1":"Renovation",
+                "#descriptionTitle1":"encompassing Painting, Drywall Finishing, Demolition, and Cleaning services",
+                "#carouselTitle2":"Accounting Services",
+                "#descriptionTitle2":"Bussiness Registration, Sales Taxes, Notary Public, License, ITIN Numbers, Online Applications"
+            },
+            "sp":{
+                "h2":"La Agencia Hernández lidera la tarea de adoptar iniciativas proactivas y comprender el panorama global en evolución.",
+                "#parraftDescription":"Nuestro equipo, compuesto por personas motivadas, se une para brindar servicios de construcción, contabilidad y tecnología de primer nivel, adaptados exclusivamente a las necesidades de cada cliente. En un breve período de tiempo, nos hemos ganado la confianza del cliente, impulsándonos hacia una excelencia incomparable.",
+                "#carouselTitle1":"Renovacion",
+                "#descriptionTitle1":"que abarca servicios de pintura, acabado de paneles de yeso, demolición y limpieza",
+                "#carouselTitle2":"Servicios Contables",
+                "#descriptionTitle2":"Registro de empresas, impuestos sobre las ventas, notario público, licencia, números ITIN, solicitudes en línea"
+            }
         },
-        "sp":{
-          "h2":"La Agencia Hernández lidera la tarea de adoptar iniciativas proactivas y comprender el panorama global en evolución.",
-          "p":"Our team, comprised of driven individuals, unites to deliver top-tier construction, accounting,and tech services, uniquely tailored to each client's needs. In a brief timeframe, we've garnered client trust, propelling us towards unparalleled excellence."
+        "services":{
+
         }
-      }
     }
-  }
-  
+}
