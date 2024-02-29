@@ -57,6 +57,8 @@ function toggleLanguage() {
         var descriptionTitle2 = document.querySelector('#descriptionTitle2');
         var carouselTitle3 = document.querySelector('#carouselTitle3');
         var descriptionTitle3 = document.querySelector('#descriptionTitle3');
+
+        //peding to make a services part 
         
         if (langButton === 'Español / Ingles') { // Check value directly
             // Update button value

@@ -37,6 +37,14 @@
             }
         },
         "services":{
+            "en":{
+                "titleServ":"What We DO",
+                "descripServ":"Need a renovation infrastructure, accounting and It Service partner? You are at the right place. Beloware the services we offer to our delighted Clients."
+            },
+            "sp":{
+                "titleServ":"Que Hacemos",
+                "descripServ":"¿Necesita un socio de renovación de infraestructura, contabilidad y servicios de TI? Está en el lugar correcto. A continuación se detallan los servicios que ofrecemos a nuestros encantados Clientes."
+            }
 
         }
     }
