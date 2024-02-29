@@ -42,7 +42,6 @@
     }
 
     // Function to toggle between English and Spanish text
-	// Function to toggle between English and Spanish text
 function toggleLanguage() {
     console.log("toggleLanguage is called");
     fetchJSONData(function(jsonData) {
@@ -50,6 +49,8 @@ function toggleLanguage() {
         var h1Element = document.querySelector('#titleHeader');
         var pElement = document.querySelector('#textHeader');
         var aElement = document.querySelector('#anchorHeader');
+        var textDescription = document.querySelector('#TextDescription');
+        var parraftDescription = document.querySelector('#parraftDescription');
         
         if (langButton === 'Español / Ingles') { // Check value directly
             // Update button value
@@ -58,6 +59,8 @@ function toggleLanguage() {
             h1Element.innerText = jsonData.intro.title.en.h1;
             pElement.innerText = jsonData.intro.title.en.p;
             aElement.innerText = jsonData.intro.title.en.a;
+            textDescription.innerText = jsonData.intro.description.en.h2;
+            parraftDescription.innerText = jsonData.intro.description.en.p;
         } else {
             // Update button value
             document.getElementById('languageButton').value = 'Español / Ingles';
@@ -65,6 +68,8 @@ function toggleLanguage() {
             h1Element.innerText = jsonData.intro.title.sp.h1;
             pElement.innerText = jsonData.intro.title.sp.p;
             aElement.innerText = jsonData.intro.title.sp.a;
+            textDescription.innerText = jsonData.intro.description.sp.h2;
+            parraftDescription.innerText = jsonData.intro.description.sp.p;
         }
     });
 }

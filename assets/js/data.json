@@ -11,6 +11,16 @@
                  "p":"donde brindamos una combinación de servicios de construcción, contabilidad, tecnología y atención personalizada para apoyar tanto a las personas como al éxito de las pequeñas empresas.",
                  "a":"Descubrir"
             }
+        },
+        "description":{
+            "en":{
+                "h2":"Hernandez Agency leads the charge in embracing the proactive initiatives , understanding the evolving global landscape",
+                "p":"Our team, comprised of driven individuals, unites to deliver top-tier construction, accounting,and tech services, uniquely tailored to each client's needs. In a brief timeframe, we've garnered client trust, propelling us towards unparalleled excellence."
+            },
+            "sp":{
+                "h2":"La Agencia Hernández lidera la tarea de adoptar iniciativas proactivas y comprender el panorama global en evolución.",
+                "p":"Our team, comprised of driven individuals, unites to deliver top-tier construction, accounting,and tech services, uniquely tailored to each client's needs. In a brief timeframe, we've garnered client trust, propelling us towards unparalleled excellence."
+            }
         }
     }
 }
