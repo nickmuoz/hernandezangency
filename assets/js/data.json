@@ -39,11 +39,23 @@
         "services":{
             "en":{
                 "titleServ":"What We DO",
-                "descripServ":"Need a renovation infrastructure, accounting and It Service partner? You are at the right place. Beloware the services we offer to our delighted Clients."
+                "descripServ":"Need a renovation infrastructure, accounting and It Service partner? You are at the right place. Beloware the services we offer to our delighted Clients.",
+                "serv1":"Renovation",
+                "servText1":"Renovation is a comprehensive process, encompassing Painting, Drywall Finishing, Demolition, and Cleaning services.",
+                "serv2":"Accounting Services",
+                "servText2":"Let us manage accounting for you and more: Bussiness Registration, Sales Taxes, Notary Public, License, ITIN Numbers, Online Applications",
+                "serv3":"Longevity Center",
+                "servText3":"Functional Medicine,Transpersonal Psychotherapy,Reiki,Pranic healing,Spiritual Response therapy,Yoga and meditation,Holistic gynecology,Longevity,aesthetic medicine."
             },
             "sp":{
                 "titleServ":"Que Hacemos",
-                "descripServ":"¿Necesita un socio de renovación de infraestructura, contabilidad y servicios de TI? Está en el lugar correcto. A continuación se detallan los servicios que ofrecemos a nuestros encantados Clientes."
+                "descripServ":"¿Necesita un socio de renovación de infraestructura, contabilidad y servicios de TI? Está en el lugar correcto. A continuación se detallan los servicios que ofrecemos a nuestros encantados Clientes.",
+                "serv1":"Renovation",
+                "servText1":"Renovation is a comprehensive process, encompassing Painting, Drywall Finishing, Demolition, and Cleaning services.",
+                "serv2":"Servicios de contabilidad",
+                "servText2":"Permítanos administrar la contabilidad para usted y más: registro comercial, impuestos sobre las ventas, notario público, licencia, números ITIN, solicitudes en línea",
+                "serv3":"Centro de longevidad",
+                "servText3":"Medicina funcional,Psicoterapia transpersonal,Reiki,Sanación pránica,Terapia de respuesta espiritual,Yoga y meditación,Ginecología holística,Longevidad,Medicina estética."
             }
 
         }

@@ -352,6 +352,10 @@ input, select, textarea {
 		text-align: right;
 	}
 
+/*services*/
+.textcard{
+	height: 180px;
+}
 /* Container */
 
 	.container {
