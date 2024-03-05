@@ -126,32 +126,32 @@
         </div>
         <form class="w3-container w3-card-4 w3-tail" id="formReg">
             <p>
-                <input class="w3-input w3-text-orange w3-padding-16" type="text" placeholder="Full Name" required
-                    id="customerName" onkeypress="setValue()" />
+                <input class="w3-input w3-text-orange w3-padding-16" type="text" required
+                    id="fullNameContac" onkeypress="setValue()" />
             </p>
             <p>
-                <input class="w3-input w3-padding-16" type="text" placeholder="Phone" required id="customerphone"
+                <input class="w3-input w3-padding-16" type="text"  required id="phonecontac"
                     onkeypress="setValue()" />
             </p>
             <p>
                 <input class="w3-input w3-padding-16" type="email" placeholder="email" required
-                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="email" onkeypress="setValue()" />
+                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailContac" onkeypress="setValue()" />
             </p>
             <p>
                 <select class="w3-input w3-padding-16" placeholder="Choose a opcion" required name="contacBy"
                     id="contacBy" onchange="setValue()">
-                    <option disabled selected>You are interested in</option>
-                    <option value="friend">Remodeling</option>
-                    <option value="instagram">Accouting</option>
-                    <option value="Facebook">Longevity Center</option>
+                    <option id="opcionText" disabled selected>You are interested in</option>
+                    <option id="opcionText1" value="friend">Remodeling</option>
+                    <option id="opcionText2" value="instagram">Accouting</option>
+                    <option id="opcionText3" value="Facebook">Longevity Center</option>
                 </select>
             </p>
             <p>
                 <input class="w3-input w3-padding-16" type="text" placeholder="message" required name="Message"
-                    id="Message" onkeypress="setValue()" />
+                    id="messageContac" onkeypress="setValue()" />
             </p>
             <p>
-                <input type="submit" class="w3-btn w3-blue-grey" value="Enviar" onclick="sendMail()">
+                <input type="submit" class="w3-btn w3-blue-grey" value="buttonContac" onclick="sendMail()">
             </p>
         </form>
     </div>

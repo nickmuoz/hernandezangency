@@ -72,6 +72,8 @@
       var contacttext1 = document.querySelector("#contacttext1");
       var contacttext2 = document.querySelector("#contacttext2");
       var contacttext3 = document.querySelector("#contacttext3");
+      var fullNameContac = document.querySelector("#fullNameContac");
+      var phonecontac = document.querySelector("#phonecontac");
 
       if (langButton === "Español / Ingles") {
         // Update button value
@@ -106,6 +108,8 @@
         contacttext1.innerText = jsonData.intro.contact.en.contacttext1;
         contacttext2.innerText = jsonData.intro.contact.en.contacttext2;
         contacttext3.innerText = jsonData.intro.contact.en.contacttext3;
+        fullNameContac.placeholder = jsonData.intro.contact.en.fullNameContac;
+        phonecontac.placeholder = jsonData.intro.contact.en.phonecontac;
       } else {
         // Update button value
         document.getElementById("languageButton").value = "Español / Ingles";
@@ -139,6 +143,8 @@
         contacttext1.innerText = jsonData.intro.contact.sp.contacttext1;
         contacttext2.innerText = jsonData.intro.contact.sp.contacttext2;
         contacttext3.innerText = jsonData.intro.contact.sp.contacttext3;
+        fullNameContac.placeholder = jsonData.intro.contact.sp.fullNameContac;
+        phonecontac.placeholder = jsonData.intro.contact.sp.phonecontac;
       }
     });
   }

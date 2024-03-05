@@ -63,13 +63,31 @@
         "titleContact": "Contac us",
         "contacttext1": "We want to be your main ally",
         "contacttext2": "Allow us to advise you and facilitate connections with experts in our network.",
-        "contacttext3": "Call Me:  "
+        "contacttext3": "Call Me:  ",
+        "fullNameContac": "Full Name",
+        "phonecontac": "Phone",
+        "emailContac": "Email",
+        "opcionText":"You are interested in",
+        "opcionText1":"Remodeling",
+        "opcionText2":"Accounting Services",
+        "opcionText3":"Longevity Center",
+        "messageContac": "Message",
+        "buttonContac": "Send"
       },
       "sp": {
         "titleContact": "Contactanos",
         "contacttext1": "Queremos ser tu principal aliado",
         "contacttext2": "Permítanos asesorarlo y facilitarle las conexiones con expertos de nuestra red.",
-        "contacttext3": "Llámame:  "
+        "contacttext3": "Llámame:",
+        "fullNameContac": "Nombre completo",
+        "phonecontac": "Teléfono",
+        "emailContac": "Correo electrónico",
+        "opcionText":"Tu estas Interesado en",
+        "opcionText1":"Remodelacion",
+        "opcionText2":"Servcios Contables",
+        "opcionText3":"Centro de Longevidad",
+        "messageContac": "Mensaje",
+        "buttonContac": "Enviar"
       }
     }
   }
