@@ -74,6 +74,13 @@
       var contacttext3 = document.querySelector("#contacttext3");
       var fullNameContac = document.querySelector("#fullNameContac");
       var phonecontac = document.querySelector("#phonecontac");
+      var emailContac = document.querySelector("#emailContac");
+      var opcionText = document.querySelector("#opcionText");
+      var opcionText1 = document.querySelector("#opcionText1");
+      var opcionText2 = document.querySelector("#opcionText2");
+      var opcionText3 = document.querySelector("#opcionText3");
+      var messageContac = document.querySelector("#messageContac");
+      var buttonContac = document.querySelector("#buttonContac");
 
       if (langButton === "Español / Ingles") {
         // Update button value
@@ -110,6 +117,13 @@
         contacttext3.innerText = jsonData.intro.contact.en.contacttext3;
         fullNameContac.placeholder = jsonData.intro.contact.en.fullNameContac;
         phonecontac.placeholder = jsonData.intro.contact.en.phonecontac;
+        emailContac.placeholder = jsonData.intro.contact.en.emailContac;
+        opcionText.innerText = jsonData.intro.contact.en.opcionText;
+        opcionText1.innerText = jsonData.intro.contact.en.opcionText1;
+        opcionText2.innerText = jsonData.intro.contact.en.opcionText2;
+        opcionText3.innerText = jsonData.intro.contact.en.opcionText3;
+        messageContac.placeholder = jsonData.intro.contact.en.messageContac;
+        buttonContac.innerText = jsonData.intro.contact.en.buttonContac;
       } else {
         // Update button value
         document.getElementById("languageButton").value = "Español / Ingles";
@@ -145,6 +159,13 @@
         contacttext3.innerText = jsonData.intro.contact.sp.contacttext3;
         fullNameContac.placeholder = jsonData.intro.contact.sp.fullNameContac;
         phonecontac.placeholder = jsonData.intro.contact.sp.phonecontac;
+        emailContac.placeholder = jsonData.intro.contact.sp.emailContac;
+        opcionText.innerText = jsonData.intro.contact.sp.opcionText;
+        opcionText1.innerText = jsonData.intro.contact.sp.opcionText1;
+        opcionText2.innerText = jsonData.intro.contact.sp.opcionText2;
+        opcionText3.innerText = jsonData.intro.contact.sp.opcionText3;
+        messageContac.placeholder = jsonData.intro.contact.sp.messageContac;
+        buttonContac.innerText = jsonData.intro.contact.sp.buttonContac;
       }
     });
   }
