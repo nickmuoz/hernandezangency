@@ -87,8 +87,49 @@
         "opcionText2":"Servcios Contables",
         "opcionText3":"Centro de Longevidad",
         "messageContac": "Mensaje",
-        "buttonContac": "Enviar"
+        "buttonContac": "Send"
       }
+    },
+    "modal":{
+      "Remodelin":{
+      "en":{
+        "titleServ1":"Remodelin",
+        "subTitle":"Painting,DryWall,Finish"
+      },
+      "sp":{
+        "titleServ1":"Remodelacion",
+        "subTitle":"Pintura,DryWall,Acabados "
+      },
+      "img1Modal":"./images/carousel/imagen1.jpg",
+      "img2Modal":"./images/carousel/imagen3.jpg",
+      "img3Modal":"./images/carousel/imagen4.jpg",
+      "img4Modal":"./images/carousel/imagen5.jpg"
+    },
+      "Longevidad":{
+      "en":{
+        "titleServ1":"Longevity",
+        "subTitle":"Integrative internal medicine and longevity"
+      },
+      "sp":{
+        "titleServ1":"Longevidad",
+        "subTitle":"Medicina interna integra y longevidad"
+      },
+      "img1Modal":"./images/carousel/imagen1.jpg",
+      "img2Modal":"./images/carousel/imagen3.jpeg",
+      "img3Modal":"./images/carousel/imagen4.jpeg"
+    },
+    "Accounting":{
+      "en":{
+        "titleServ1":"Accounting",
+        "subTitle":""
+      },
+      "sp":{
+        "titleServ1":"Contabilidad"
+      },
+      "img1Modal":"./images/carousel/imagen1.jpg",
+      "img2Modal":"./images/carousel/imagen3.jpeg",
+      "img3Modal":"./images/carousel/imagen4.jpeg"
     }
+  }
   }
 }
