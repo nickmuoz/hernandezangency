@@ -94,11 +94,13 @@
       "Remodelin":{
       "en":{
         "titleServ1":"Remodelin",
-        "subTitle":"Painting,DryWall,Finish"
+        "subTitle":"Painting,DryWall,Finish",
+        "textserv":"Our mission is to provide you with security, confidence and guarantee at the highest level in each suggested project."
       },
       "sp":{
         "titleServ1":"Remodelacion",
-        "subTitle":"Pintura,DryWall,Acabados "
+        "subTitle":"Pintura,DryWall,Acabados ",
+        "textserv":"Nuestra mision es brindarle a usted seguridad, confianza y garantía al mas alto nivel en cada proyecto sugerido."
       },
       "img1Modal":"./images/carousel/imagen1.jpg",
       "img2Modal":"./images/carousel/imagen3.jpg",
@@ -114,9 +116,10 @@
         "titleServ1":"Longevidad",
         "subTitle":"Medicina interna integra y longevidad"
       },
-      "img1Modal":"./images/carousel/imagen1.jpg",
-      "img2Modal":"./images/carousel/imagen3.jpeg",
-      "img3Modal":"./images/carousel/imagen4.jpeg"
+      "img1Modal":"./images/carousel/imagen6.jpg",
+      "img2Modal":"./images/carousel/imagen7.jpg",
+      "img3Modal":"./images/carousel/imagen8.jpg",
+      "img4Modal":"./images/carousel/imagen9.jpg"
     },
     "Accounting":{
       "en":{
