@@ -125,6 +125,7 @@
     fetchJSONData(function (jsonData) {
         var modalTitle = jsonData.intro.modal[theme][getCurrentLanguage()].titleServ1;
         var modalSubTitle = jsonData.intro.modal[theme][getCurrentLanguage()].subTitle;
+        var modalTextserv = jsonData.intro.modal[theme][getCurrentLanguage()].textserv;
         var modalImgSrc1 = jsonData.intro.modal[theme].img1Modal;
         var modalImgSrc2 = jsonData.intro.modal[theme].img2Modal;
         var modalImgSrc3 = jsonData.intro.modal[theme].img3Modal;
@@ -133,6 +134,7 @@
         // Update the modal elements
         var modalTitleElement = document.querySelector("#exampleModalLabel");
         var modalSubTitleElement = document.querySelector("#subTitle");
+        var modalTextservElement = document.querySelector("#textserv");
         var modalImgElement1 = document.querySelector("#imgModal1");
         var modalImgElement2 = document.querySelector("#imgModal2");
         var modalImgElement3 = document.querySelector("#imgModal3");
@@ -140,6 +142,7 @@
 
         modalTitleElement.innerText = modalTitle;
         modalSubTitleElement.innerText = modalSubTitle;
+        modalTextservElement.innerText = modalTextserv;
         modalImgElement1.src = modalImgSrc1;
         modalImgElement2.src = modalImgSrc2;
         modalImgElement3.src = modalImgSrc3;

@@ -95,12 +95,12 @@
       "en":{
         "titleServ1":"Remodelin",
         "subTitle":"Painting,DryWall,Finish",
-        "textserv":"Our mission is to provide you with security, confidence and guarantee at the highest level in each suggested project."
+        "textserv":"Breathe new life into your space! Our comprehensive renovation services cover everything from transforming walls with Painting and Drywall Finishing to expert Demolition and thorough Cleaning. We'll handle all the details, so you can enjoy the beautiful results."
       },
       "sp":{
         "titleServ1":"Remodelacion",
         "subTitle":"Pintura,DryWall,Acabados ",
-        "textserv":"Nuestra mision es brindarle a usted seguridad, confianza y garantía al mas alto nivel en cada proyecto sugerido."
+        "textserv":"¡Dale nueva vida a tu espacio! Nuestros servicios integrales de renovación cubren todo, desde transformar paredes con pintura y acabado de paneles de yeso hasta demolición experta y limpieza exhaustiva. Nos encargaremos de todos los detalles para que puedas disfrutar de los hermosos resultados."
       },
       "img1Modal":"./images/carousel/imagen1.jpg",
       "img2Modal":"./images/carousel/imagen3.jpg",
@@ -110,18 +110,20 @@
       "Longevidad":{
       "en":{
         "titleServ1":"Longevity",
-        "subTitle":"Integrative internal medicine and longevity"
+        "subTitle":"Integrative internal medicine and longevity",
+        "textserv":"Explore a path to complete well-being with our range of services, from Functional Medicine and Transpersonal Psychotherapy to Reiki, Yoga, and Holistic Gynecology. We combine traditional and alternative approaches to address your physical, emotional, and spiritual needs, helping you look and feel your best."
       },
       "sp":{
         "titleServ1":"Longevidad",
-        "subTitle":"Medicina interna integra y longevidad"
+        "subTitle":"Medicina interna integra y longevidad",
+        "textserv":"Explora un camino hacia el bienestar completo con nuestra gama de servicios, desde Medicina Funcional y Psicoterapia Transpersonal hasta Reiki, Yoga y Ginecología Holística. Combinamos enfoques tradicionales y alternativos para abordar sus necesidades físicas, emocionales y espirituales, ayudándolo a verse y sentirse mejor."
       },
       "img1Modal":"./images/carousel/imagen6.jpg",
       "img2Modal":"./images/carousel/imagen7.jpg",
       "img3Modal":"./images/carousel/imagen8.jpg",
       "img4Modal":"./images/carousel/imagen9.jpg"
     },
-    "Accounting":{
+      "Accounting":{
       "en":{
         "titleServ1":"Accounting",
         "subTitle":""
