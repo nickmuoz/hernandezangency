@@ -2,7 +2,7 @@
   "intro": {
     "title": {
       "en": {
-        "h1": "Hi, we are Hernandez Agency, your partnerin providing services and more.",
+        "h1": "Hi, we are Hernandez Agency, your partnering providing services and more.",
         "p": "where we provide a combination of construction, accounting, technology, and personalized attention services to support both individuals and the success of small businesses..",
         "a": "Discover"
       },
@@ -37,7 +37,7 @@
     "services": {
       "en": {
         "titleServ": "What We DO",
-        "descripServ": "Need a renovation infrastructure, accounting and It Service partner? You are at the right place. Beloware the services we offer to our delighted Clients.",
+        "descripServ": "Need a renovation infrastructure, accounting and It Service partner? You are at the right place. Below are the services we offer to our delighted Clients.",
         "serv1": "Renovation",
         "servText1": "Renovation is a comprehensive process, encompassing Painting, Drywall Finishing, Demolition, and Cleaning services.",
         "serv2": "Accounting Services",
@@ -94,12 +94,12 @@
       "Remodelin":{
       "en":{
         "titleServ1":"Remodelin",
-        "subTitle":"Painting,DryWall,Finish",
+        "subTitle":"Painting, DryWall, Finish",
         "textserv":"Breathe new life into your space! Our comprehensive renovation services cover everything from transforming walls with Painting and Drywall Finishing to expert Demolition and thorough Cleaning. We'll handle all the details, so you can enjoy the beautiful results."
       },
       "sp":{
         "titleServ1":"Remodelacion",
-        "subTitle":"Pintura,DryWall,Acabados ",
+        "subTitle":"Pintura, DryWall, Acabados ",
         "textserv":"¡Dale nueva vida a tu espacio! Nuestros servicios integrales de renovación cubren todo, desde transformar paredes con pintura y acabado de paneles de yeso hasta demolición experta y limpieza exhaustiva. Nos encargaremos de todos los detalles para que puedas disfrutar de los hermosos resultados."
       },
       "img1Modal":"./images/carousel/imagen1.jpg",
@@ -126,14 +126,16 @@
       "Accounting":{
       "en":{
         "titleServ1":"Accounting",
-        "subTitle":""
+        "subTitle":"Bussiness Registration, Sales Taxes, ITIN Numbers",
+        "textserv":"Streamline your business operations with our one-stop shop! We handle everything from Business Registration and Sales Tax Management to Licensing Assistance and ITIN Applications. Let us take care of the administrative burdens so you can focus on running your business. "
       },
       "sp":{
         "titleServ1":"Contabilidad"
       },
-      "img1Modal":"./images/carousel/imagen1.jpg",
-      "img2Modal":"./images/carousel/imagen3.jpeg",
-      "img3Modal":"./images/carousel/imagen4.jpeg"
+      "img1Modal":"./images/carousel/imagen10.jpg",
+      "img2Modal":"./images/carousel/imagen11.jpg",
+      "img3Modal":"./images/carousel/imagen12.jpg",
+      "img4Modal":"./images/carousel/imagen13.jpg"
     }
   }
   }
