@@ -516,6 +516,11 @@ pre code {
 	margin-top: 16px;
 }
 
+/* Carousel */
+.indicators{
+	height: 100%;
+}
+
 
 @media screen and (max-width: 980px) {
 
