@@ -101,7 +101,7 @@
         jsonData.intro.contact[language].contacttext3;
       document.querySelector("#fullNameContac").placeholder =
         jsonData.intro.contact[language].fullNameContac;
-      document.querySelector("#phonecontac").placeholder =
+      document.querySelector("#phoneContac").placeholder =
         jsonData.intro.contact[language].phonecontac;
       document.querySelector("#emailContac").placeholder =
         jsonData.intro.contact[language].emailContac;
@@ -166,6 +166,16 @@
     $("#button3").click(function () {
       selectTheme("Longevidad");
     });
+    $("#buttonContac").click(function () {
+      sendMail();
+    });
+    $("#fullNameContac, #phoneContac, #emailContac, #contacBy, #messageContac").on("input", setValue);
+  $("#formReg").on("submit", function(event) {
+    // Prevent default form submission
+    event.preventDefault();
+    // Call sendMail function when the form is submitted
+    sendMail();
+  });
   });
 
   // Helper function to get the current language
@@ -173,4 +183,141 @@
     var languageSet = document.getElementById("languageButton").value;
     return languageSet === "Español / Ingles" ? "sp" : "en";
   }
+
+  // Function to send the contac Form
+
+  // Modify your setValue function to accept an event parameter
+function setValue(event) {
+  // Prevent form submission if invoked by pressing Enter key
+  if (event && event.key === 'Enter') {
+    event.preventDefault();
+    return;
+  }
+  dataMail.html = document.getElementById("messageContac").value;
+  dataMail.to = document.getElementById("emailContac").value;
+  dataMail.about = "Beatriz hernadez";
+  dataMail.contacBy = document.getElementById("contacBy").value;
+  dataMail.customerName = document.getElementById("fullNameContac").value;
+  dataMail.movil = document.getElementById("phoneContac").value;
+  console.log(dataMail)
+}
+
+let dataMail = new Object({
+  html: null,
+  to: null,
+  about: null,
+  contacBy:null,
+  customerName:null,
+  movil:null
+})
+
+//vatidation Data Function
+
+function validationData(data) {
+  let formIsValid = true;
+
+  const validations = {
+    email: {
+      field: data.to,
+      errorSetter: setemailError,
+      errorMessage: "Email No valido",
+      validationRegex: /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/
+    },
+    address: {
+      field: data.address,
+      errorSetter: setaddressError,
+      errorMessage: "Ingrese Direccion por favor"
+    },
+    fullName: {
+      field: data.fullName,
+      errorSetter: setfullNameError,
+      errorMessage: "Ingrese su Nombre por favor"
+    },
+    phone: {
+      field: data.phone,
+      errorSetter: setphoneError,
+      errorMessage: "Phone is required"
+    },
+    // Additional fields for validation
+    contacBy: {
+      field: data.contacBy,
+      errorSetter: setContacByError,
+      errorMessage: "ContacBy is required"
+    },
+    customerName: {
+      field: data.customerName,
+      errorSetter: setCustomerNameError,
+      errorMessage: "Customer Name is required"
+    },
+    movil: {
+      field: data.movil,
+      errorSetter: setMovilError,
+      errorMessage: "Movil is required"
+    }
+  };
+
+  for (const key in validations) {
+    const validation = validations[key];
+    if (!validation.field || (validation.validationRegex && !validation.validationRegex.test(validation.field))) {
+      formIsValid = false;
+      validation.errorSetter(validation.errorMessage);
+    } else {
+      validation.errorSetter("");
+    }
+  }
+
+  if (formIsValid) {
+    setShowModal(true);
+  }
+
+  return formIsValid;
+}
+
+
+async function sendMail() {
+  if(Object.keys(dataMail).length === 0){
+    alert("llena los campos por favor")
+  }else{
+  // validateEmail(to) 
+  const myheaders = new Headers();
+  myheaders.append("Content-Type", "application/x-www-form-urlencoded");
+  var urlencoded = new URLSearchParams();
+  urlencoded.append("to", "infohernandezagency@gmail.com");
+  urlencoded.append(
+    "html",
+    `
+<div class="card">
+    <h1>El cliente ${dataMail.customerName}</h1>
+    <p class="title">Estos son los datos de contacto</p>
+    <p>Celular : ${dataMail.movil}</p>
+    <p>Correo : ${dataMail.to}</p>
+    <p>Esta interesado: ${dataMail.contacBy}</p>
+    <p>Mensaje: ${dataMail.html}</p>
+</div>`
+  );
+  urlencoded.append("name", dataMail.customerName)
+  urlencoded.append("text", dataMail.contacBy);
+  urlencoded.append("subject", dataMail.about);
+  urlencoded.append("from", "negocioscol@interactivebytes.co");
+
+  var requestOptions = {
+    method: "POST",
+    headers: myheaders,
+    body: urlencoded,
+    redirect: "follow",
+  };
+
+  fetch("https://magicsweetapi.fly.dev/mail/send-mail", requestOptions)
+    .then((response) => response.json())
+  .then( response => {
+    var contacUs = JSON.stringify(response);
+    
+    alert (`Gracias Pronto Nos Podremos en Contacto Contigo` );
+    window.location.href="#header";
+  })
+ .catch((error) => console.log("error", error));
+}}
+
+
+
 })(jQuery);

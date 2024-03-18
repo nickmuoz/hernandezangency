@@ -171,14 +171,12 @@
         </div>
         <!-- end of modal -->
     </section>
-
+    <!--Contact Form-->
     <div class="main style2 special container contactContainer" id="contactContainer" name="contact">
         <div class="textContact">
             <h1 id="titleContact" class="major contactTitle"></h1>
-            <p id="contacttext1" class="contactTitle">
-            </p>
-            <p class="text-primary"><b id="contacttext2"></b>
-            </p>
+            <p id="contacttext1" class="contactTitle"></p>
+            <p class="text-primary"><b id="contacttext2"></b></p>
             <p id="contacttext3" class="contactTitle"></p>
             <p class="contactTitle"><strong>+1 (786) 200-0310</strong></p>
         </div>
@@ -188,22 +186,26 @@
                     onkeypress="setValue()" />
             </p>
             <p>
-                <input class="w3-input w3-padding-16" type="text" required id="phonecontac" onkeypress="setValue()" />
+                <span class="error" id="fullNameError"></span>
+                <input class="w3-input w3-padding-16" type="text" required id="phoneContac" onkeypress="setValue()" />
             </p>
             <p>
-                <input class="w3-input w3-padding-16" type="email" placeholder="email" required
+                <span class="error" id="phoneError"></span>
+                <input class="w3-input w3-padding-16" type="email" required
                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" id="emailContac" onkeypress="setValue()" />
             </p>
             <p>
-                <select class="w3-input w3-padding-16" placeholder="Choose a opcion" required name="contacBy"
+                <span class="error" id="contacByError"></span>
+                <select class="w3-input w3-padding-16" required name="contacBy"
                     id="contacBy" onchange="setValue()">
                     <option id="opcionText" disabled selected></option>
-                    <option id="opcionText1" value="friend"></option>
-                    <option id="opcionText2" value="instagram"></option>
-                    <option id="opcionText3" value="Facebook"></option>
+                    <option id="opcionText1"></option>
+                    <option id="opcionText2"></option>
+                    <option id="opcionText3"></option>
                 </select>
             </p>
             <p>
+                <span class="error" id="messageContacError"></span>
                 <input class="w3-input w3-padding-16" type="text" required name="Message" id="messageContac"
                     onkeypress="setValue()" />
             </p>
@@ -212,6 +214,7 @@
             </p>
         </form>
     </div>
+    
     <a href="https://wa.me/17862000310" class="whatsapp_float" target="_blank" rel="noopener noreferrer">
         <i class="fa fa-whatsapp whatsapp-icon"></i>
     </a>
