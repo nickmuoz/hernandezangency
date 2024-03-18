@@ -312,7 +312,7 @@ async function sendMail() {
   .then( response => {
     var contacUs = JSON.stringify(response);
     
-    alert (`Gracias Pronto Nos Pondremos en Contacto Contigo` );
+    alert (`Gracias Pronto lo contactaremos` );
     window.location.href="#header";
   })
  .catch((error) => console.log("error", error));
